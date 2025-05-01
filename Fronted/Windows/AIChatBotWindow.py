@@ -14,10 +14,8 @@ from PySide6.QtWidgets import (
     QHBoxLayout, QScrollArea, QSizePolicy, QFrame
 )
 from PySide6.QtGui import QPalette, QBrush, QPixmap
-from PySide6.QtCore import Qt
-from Fronted.Services.Ollama_api import ask_ollama
-from PySide6.QtCore import QTimer
-
+from PySide6.QtCore import Qt, QTimer
+from Fronted.Services.Ollama_api import ask_ollama_contextual
 
 # ======================================== AI CHATBOT WINDOW ======================================== #
 class AIChatBotWindow(QWidget):
@@ -143,10 +141,8 @@ class AIChatBotWindow(QWidget):
         if not prompt:
             return
 
-        # === User chat bubble === #
         self.chat_area.addWidget(self.create_bubble(prompt, is_user=True))
 
-        # === temp loading message === #
         self.loading_label = QLabel(" Thinking... 🤖")
         self.loading_label.setStyleSheet("""
             color: #00acc1;
@@ -156,18 +152,12 @@ class AIChatBotWindow(QWidget):
         self.chat_area.addWidget(self.loading_label)
 
         self.input_field.clear()
-
-        # === send the text to the bot === #
         self.get_bot_reply(prompt)
 
-    # ====== Send the prompt to the Ollama model and get a response ====== #
-    # Send the message to Ollama
-    # Wait for the response
-    # Remove the temporary "Loading..." message
-    # Add the bot's response to the chat
+    # ========== Get response using contextual bot ========== #
     def get_bot_reply(self, prompt):
         try:
-            response = ask_ollama(prompt)
+            response = ask_ollama_contextual(prompt)
         except Exception as e:
             response = f"Error: {e}"
 

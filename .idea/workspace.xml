@@ -5,20 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c834283e-efbe-4ac0-8a06-331bf99b5dc1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/InvestmentAdvisor.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Fronted/Services/Ollama_api.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Fronted/Windows/AIChatBotWindow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Fronted/Windows/BuyStocksWindow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Fronted/Windows/LoginWindow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Fronted/Windows/MainWindow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Fronted/Windows/OrderHistoryWindow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Fronted/Windows/PortfolioWindow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Fronted/Windows/SellStocksWindow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pictures/background_pic.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fronted/Services/Dataset/merged_data.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fronted/Services/data_processing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fronted/Services/embedder.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fronted/Services/generate_embeddings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fronted/Services/vector_store.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fronted/Services/Ollama_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fronted/Services/Ollama_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fronted/Windows/AIChatBotWindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fronted/Windows/AIChatBotWindow.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,38 +37,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python.BuyStocksWindow.executor&quot;: &quot;Run&quot;,
-    &quot;Python.LoginWindow.executor&quot;: &quot;Run&quot;,
-    &quot;Python.PortfolioWindow.executor&quot;: &quot;Run&quot;,
-    &quot;Python.fronted.executor&quot;: &quot;Run&quot;,
-    &quot;Python.loginWindow.executor&quot;: &quot;Run&quot;,
-    &quot;Python.mainWindow.executor&quot;: &quot;Run&quot;,
-    &quot;Python.mainWindows.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;aDefault&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.BuyStocksWindow.executor": "Run",
+    "Python.LoginWindow.executor": "Run",
+    "Python.PortfolioWindow.executor": "Run",
+    "Python.data_processing.executor": "Run",
+    "Python.embedder.executor": "Run",
+    "Python.fronted.executor": "Run",
+    "Python.generate_embeddings.executor": "Run",
+    "Python.loginWindow.executor": "Run",
+    "Python.mainWindow.executor": "Run",
+    "Python.mainWindows.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.code.analysis.last.selected.profile": "aDefault",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\elyas\PycharmProjects\InvestmentAdvisor\Fronted\Services\Dataset" />
       <recent name="C:\Users\elyas\PycharmProjects\InvestmentAdvisor\Pictures" />
       <recent name="C:\Users\elyas\PycharmProjects\InvestmentAdvisor" />
       <recent name="C:\Users\elyas\PycharmProjects\InvestmentAdvisor\Fronted\Windows" />
       <recent name="C:\Users\elyas\PycharmProjects\InvestmentAdvisor\Fronted" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.BuyStocksWindow">
+  <component name="RunManager">
     <configuration name="BuyStocksWindow" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="InvestmentAdvisor" />
       <option name="ENV_FILES" value="" />
@@ -121,8 +119,56 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="embedder" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="InvestmentAdvisor" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Fronted/Services" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Fronted/Services/embedder.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="generate_embeddings" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="InvestmentAdvisor" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Fronted/Services" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Fronted/Services/generate_embeddings.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.generate_embeddings" />
+        <item itemvalue="Python.embedder" />
         <item itemvalue="Python.BuyStocksWindow" />
         <item itemvalue="Python.MainWindow" />
       </list>
@@ -148,7 +194,13 @@
       <workItem from="1745352896206" duration="5790000" />
       <workItem from="1745398096266" duration="23779000" />
       <workItem from="1745426286169" duration="10264000" />
-      <workItem from="1745580700252" duration="681000" />
+      <workItem from="1745580700252" duration="1177000" />
+      <workItem from="1745870422967" duration="2681000" />
+      <workItem from="1745946309315" duration="5339000" />
+      <workItem from="1745954795034" duration="36000" />
+      <workItem from="1745954995355" duration="86000" />
+      <workItem from="1746014785752" duration="4431000" />
+      <workItem from="1746097695425" duration="4889000" />
     </task>
     <servers />
   </component>
@@ -156,12 +208,15 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/InvestmentAdvisor$generate_embeddings.coverage" NAME="generate_embeddings Coverage Results" MODIFIED="1746101542450" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Fronted/Services" />
     <SUITE FILE_PATH="coverage/InvestmentAdvisor$fronted.coverage" NAME="fronted Coverage Results" MODIFIED="1745155430548" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/InvestmentAdvisor$BuyStocksWindow.coverage" NAME="BuyStocksWindow Coverage Results" MODIFIED="1745429174434" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Fronted/Windows" />
-    <SUITE FILE_PATH="coverage/InvestmentAdvisor$LoginWindow.coverage" NAME="LoginWindow Coverage Results" MODIFIED="1745437771761" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Fronted/Windows" />
+    <SUITE FILE_PATH="coverage/InvestmentAdvisor$BuyStocksWindow.coverage" NAME="BuyStocksWindow Coverage Results" MODIFIED="1746026899742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Fronted/Windows" />
+    <SUITE FILE_PATH="coverage/InvestmentAdvisor$LoginWindow.coverage" NAME="LoginWindow Coverage Results" MODIFIED="1746102224769" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Fronted/Windows" />
     <SUITE FILE_PATH="coverage/InvestmentAdvisor$PortfolioWindow.coverage" NAME="PortfolioWindow Coverage Results" MODIFIED="1745419018076" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Fronted/Windows" />
     <SUITE FILE_PATH="coverage/InvestmentAdvisor$mainWindow.coverage" NAME="mainWindow Coverage Results" MODIFIED="1745418491923" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Fronted/Windows" />
+    <SUITE FILE_PATH="coverage/InvestmentAdvisor$data_processing.coverage" NAME="data_processing Coverage Results" MODIFIED="1746027556529" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Fronted/Services" />
     <SUITE FILE_PATH="coverage/InvestmentAdvisor$mainWindows.coverage" NAME="mainWindows Coverage Results" MODIFIED="1745165810933" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Fronted/Windows" />
     <SUITE FILE_PATH="coverage/InvestmentAdvisor$loginWindow.coverage" NAME="loginWindow Coverage Results" MODIFIED="1745429180171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Fronted/Windows" />
+    <SUITE FILE_PATH="coverage/InvestmentAdvisor$embedder.coverage" NAME="embedder Coverage Results" MODIFIED="1746101491208" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Fronted/Services" />
   </component>
 </project>
